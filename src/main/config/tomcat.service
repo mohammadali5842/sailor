@@ -4,15 +4,15 @@ After=network.target
 
 [Service]
 Type=forking
-Environment=JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64/
-Environment=CATALINA_HOME=/home/ubuntu/middleware/apache-tomcat-9.0.55
-Environment=CATALINA_BASE=/home/ubuntu/middleware/apache-tomcat-9.0.55
+Environment="JAVA_HOME=$JAVA_HOME"
+Environment=CATALINA_HOME=$CATALINA_HOME
+Environment=CATALINA_BASE=$CATALINA_HOME
 
-ExecStart=/home/ubuntu/middleware/apache-tomcat-9.0.55/bin/startup.sh
-ExecStop=/home/ubuntu/middleware/apache-tomcat-9.0.55/bin/shutdown.sh
+ExecStart=$CATALINA_HOME/bin/startup.sh
+ExecStop=$CATALINA_HOME/bin/shutdown.sh
 
-User=ubuntu
-Group=ubuntu
+User=$USER
+Group=$GROUP
 RestartSec=20
 Restart=always
 
