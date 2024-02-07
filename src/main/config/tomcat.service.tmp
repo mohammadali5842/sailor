@@ -4,15 +4,15 @@ After=network.target
 
 [Service]
 Type=forking
-Environment="JAVA_HOME=$JAVA_HOME"
-Environment=CATALINA_HOME=$CATALINA_HOME
-Environment=CATALINA_BASE=$CATALINA_HOME
+Environment="JAVA_HOME=#JAVA_HOME#"
+Environment=CATALINA_HOME=#CATALINA_HOME#
+Environment=CATALINA_BASE=#CATALINA_HOME#
 
-ExecStart=$CATALINA_HOME/bin/startup.sh
-ExecStop=$CATALINA_HOME/bin/shutdown.sh
+ExecStart=#CATALINA_HOME#/bin/startup.sh
+ExecStop=#CATALINA_HOME#/bin/shutdown.sh
 
-User=$USER
-Group=$GROUP
+User=#USER#
+Group=#GROUP#
 RestartSec=20
 Restart=always
 
