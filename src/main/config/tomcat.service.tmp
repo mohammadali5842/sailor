@@ -11,6 +11,7 @@ Environment=CATALINA_BASE=#CATALINA_HOME#
 ExecStart=#CATALINA_HOME#/bin/startup.sh
 ExecStop=#CATALINA_HOME#/bin/shutdown.sh
 
+
 User=#USER#
 Group=#GROUP#
 RestartSec=20
