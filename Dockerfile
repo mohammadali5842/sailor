@@ -8,8 +8,8 @@ RUN mkdir -p /u01/middleware
 WORKDIR /u01/middleware
 
 ADD https://download.java.net/openjdk/jdk11.0.0.1/ri/openjdk-11.0.0.1_linux-x64_bin.tar.gz .
-RUN tar -xvzf jdk-11.0.22_linux-x64_bin.tar.gz
-RUN rm jdk-11.0.22_linux-x64_bin.tar.gz
+RUN tar -xvzf openjdk-11.0.0.1_linux-x64_bin.tar.gz
+RUN rm openjdk-11.0.0.1_linux-x64_bin.tar.gz
 
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.89/bin/apache-tomcat-9.0.89.tar.gz .
 RUN tar -xvzf apache-tomcat-9.0.89.tar.gz
