@@ -1,0 +1,5 @@
+com\hinckley\sailor\api\InfoEndpoint.class
+com\hinckley\sailor\api\HealthCheckApiController.class
+com\hinckley\sailor\config\RootConfig.class
+com\hinckley\sailor\config\WebMvcConfig.class
+com\hinckley\sailor\init\SailorWebApplicationInitializer.class
