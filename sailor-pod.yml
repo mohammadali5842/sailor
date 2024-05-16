@@ -3,7 +3,6 @@ kind: pod
 metadata:
   name: sailor-pod
   version: 1.0
-namespace: default
 spec:
   container:
   - name: sailor
