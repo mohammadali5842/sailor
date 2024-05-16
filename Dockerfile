@@ -1,6 +1,6 @@
 FROM ubuntu:23.04
 
-ENV JAVA_HOME=/u01/middleware/jdk-11.0.22
+ENV JAVA_HOME=/u01/middleware/openjdk-11.0.0.1
 ENV TOMCAT_HOME=/u01/middleware/apache-tomcat-9.0.89
 ENV PATH=$PATH:${JAVA_HOME}/bin:${TOMCAT_HOME}/bin
 
